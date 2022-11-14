@@ -1,20 +1,13 @@
 .padding{
-    padding-bottom: 94px;
     display: none;
 }
-@media screen and (min-width: 1200px) {
-.padding{
-    display: contents;
-        }
-    
-}
 .width{
-    width: 450px;
     padding-bottom: 30px;
 }
 .container-item{
-    // display: flex;
     gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .services{
@@ -70,6 +63,11 @@ flex-basis: calc((100% - 60px)/3);
     width: 100%;
     padding-top: 27px;
     padding-bottom: 27px;
+}
+@media screen and (min-width:768px) {
+    .width {
+        width: 354px;
+    }
 }
 @media screen and (min-width:1200px) {
     .container-item {

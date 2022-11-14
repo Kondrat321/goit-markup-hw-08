@@ -20,7 +20,7 @@
             <li><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
             <li><a href="" class="site-nav__link">Контакты</a></li>   
         </ul>
-        <button type="button" class="mobile-menu-open"><svg class="mobile-menu-open__icon" width="40" height="40">
+        <button type="button" class="mobile-menu-open" data-menu-open><svg class="mobile-menu-open__icon" width="40" height="40">
                 <use href="./images/sprite.svg#burger-icon"></use>
             </svg>
         </button>
@@ -38,6 +38,44 @@
         </ul>
     </div>
     </header>
+    <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+        <button type="button" class="mobile-menu__close-btn" data-menu-close>
+            <svg class="burger" width="30" height="30">
+                <use href="./images/sprite.svg#icon-close_button"></use>
+            </svg>
+        </button>
+        <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="./index.html">Студія</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="">Контакти</a>
+            </li>
+        </ul>
+        <ul class="mobile-menu__contacts">
+            <li class="mobile-menu__contacts__item"> <a class="mobile-menu__phone" href="tel:0961111111">+38 096 111 11 11</a></li>
+            <li class="mobile-menu__contacts__item"> <a class="mobile-menu__mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        </ul>
+        <ul class="mobile-menu__social-list">
+            <li class="mobile-menu__social-list__item">
+                <a class="mobile-menu__social-list__link" href=""><span lang="en">Instagram</span></a>
+            </li>
+            <li class="mobile-menu__social-list__item">
+                <a class="mobile-menu__social-list__link" href=""><span lang="en">Twitter</span></a>
+            </li>
+            <li class="mobile-menu__social-list__item">
+                <a class="mobile-menu__social-list__link" href=""><span lang="en">Facebook</span></a>
+            </li>
+            <li class="mobile-menu__social-list__item">
+                <a class="mobile-menu__social-list__link" href=""><span lang="en">LinkedIn</span></a>
+            </li>
+        </ul>
+        </div>
+    </div>
     <main>
         <!-- Hero -->
     <section class="hero">
@@ -283,7 +321,7 @@
     <footer>
     <div class="container footer-general-container">
          <!-- Logo -->
-        <div>
+        <div class="footer-contacts">
           <a href="" class="logo-footer">Web<span class="logo-footer__logo-color-footer">Studio</span></a>
           <address class="address">
           <p class="address__margin">м. Київ, пр-т Лесі Українки, 26</p> 
@@ -303,6 +341,7 @@
             <li><a href="" class="footer-social-list__footer-social-link"><svg class="footer-social-list_footer-social-link_icon" width="20" height="20"><use href="./images/sprite.svg#icon-linkedin"></use></svg></a></li>
             </ul>
         </div>
+    
         <div class="block-sbscribe">
             <h3 class="footer-title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h3>
             <form class="subscribe">
@@ -350,6 +389,7 @@
                     </form>
         </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>

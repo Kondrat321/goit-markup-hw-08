@@ -19,7 +19,12 @@
             <li> <a href="./index.html" class="site-nav__link">Студия</a></li>
             <li> <a href="./portfolio.html" class="site-nav__link site-nav_link_curent">Портфолио</a></li>
             <li"><a href="" class="site-nav__link">Контакты</a></li>   
-        </ul>     
+        </ul>
+        <button type="button" class="mobile-menu-open" data-menu-open><svg class="mobile-menu-open__icon" width="40"
+                height="40">
+                <use href="./images/sprite.svg#burger-icon"></use>
+            </svg>
+        </button>
 </nav>
         <ul class="header-contacts">
             <li class="header-contacts__item">
@@ -34,7 +39,47 @@
             </svg>+38 096 111 11 11</a></li>
         </ul>
     </div>
-    </header>
+</header>
+    <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+            <button type="button" class="mobile-menu__close-btn" data-menu-close>
+                <svg class="burger" width="30" height="30">
+                    <use href="./images/sprite.svg#icon-close_button"></use>
+                </svg>
+            </button>
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="./index.html">Студія</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="./portfolio.html">Портфоліо</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="">Контакти</a>
+                </li>
+            </ul>
+            <ul class="mobile-menu__contacts">
+                <li class="mobile-menu__contacts__item"> <a class="mobile-menu__phone" href="tel:0961111111">+38 096 111 11
+                        11</a></li>
+                <li class="mobile-menu__contacts__item"> <a class="mobile-menu__mail"
+                        href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            </ul>
+            <ul class="mobile-menu__social-list">
+                <li class="mobile-menu__social-list__item">
+                    <a class="mobile-menu__social-list__link" href=""><span lang="en">Instagram</span></a>
+                </li>
+                <li class="mobile-menu__social-list__item">
+                    <a class="mobile-menu__social-list__link" href=""><span lang="en">Twitter</span></a>
+                </li>
+                <li class="mobile-menu__social-list__item">
+                    <a class="mobile-menu__social-list__link" href=""><span lang="en">Facebook</span></a>
+                </li>
+                <li class="mobile-menu__social-list__item">
+                    <a class="mobile-menu__social-list__link" href=""><span lang="en">LinkedIn</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <main>
         <!-- Filter -->
        <h1 class="hidden">Наши работы</h1>
@@ -51,7 +96,16 @@
         <ul class="services">
             <li class="sample-list-item">
                 <a href="" class="sample">
-                    <div class="sample-list-img"><img src="./images/page2/technology.jpg" alt="Открытый нутбук" width="370">
+                    <div class="sample-list-img">
+                        <picture>
+                            <source srcset="./images/page2/technology.jpg 1x, ./images/page2/technology@2x.jpg 2x" 
+                            media="(min-width:1200px)">
+                            <source srcset="./images/tablet_images/portfolio/t-technology.jpg 1x, ./images/tablet_images/portfolio/t-technology@2x.jpg 2x" 
+                            media="(min-width:768px)">
+                            <source srcset="./images/mobile_imeges/Portfolio/m-technokryack@1x.jpg 1x, ./images/mobile_imeges/Portfolio/m-technokryack@2x.jpg 2x" 
+                            media="(max-width:767px)">
+                            <img src="./images/mobile_imeges/Portfolio/m-technokryack@1x.jpg" alt="Открытый нутбук" width="370">
+                        </picture>
                         <p class="card-overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
                         Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                     </p>
@@ -64,7 +118,19 @@
             </li>
             <li class="sample-list-item">
                 <a href="" class="sample">
-                    <div class="sample-list-img"><img src="./images/page2/new_orlean-vs-golden_star.jpg" alt="Игра в баскетбол" width="370">
+                    <div class="sample-list-img">
+                        <picture>
+                        <source 
+                        srcset="./images/page2/new_orlean-vs-golden_star.jpg 1x, ./images/page2/new_orlean-vs-golden_star@2x.jpg 2x" 
+                        media="(min-width:1200px)">
+                        <source
+                            srcset="./images/tablet_images/portfolio/t-bascetball@1x.jpg 1x, ./images/tablet_images/portfolio/t-bascetball@2x.jpg 2x"
+                            media="(min-width:768px)">
+                        <source
+                            srcset="./images/mobile_imeges/Portfolio/m-basketball@1x.jpg 1x, ./images/mobile_imeges/Portfolio/m-basketball@2x.jpg 2x"
+                            media="(max-width:767px)">
+                        <img src="./images/mobile_imeges/Portfolio/m-basketball@1x.jpg" alt="Игра в баскетбол" width="370">
+                        </picture>
                         <p class="card-overlay">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                         Reiciendis, ad suscipit. Voluptas esse consequuntur ex deserunt at? Sed, ad. 
                         Dignissimos eligendi cupiditate ullam excepturi suscipit dolorem delectus temporibus pariatur asperiores!
@@ -78,7 +144,17 @@
             </li>
             <li class="sample-list-item">
                 <a href="" class="sample">
-                    <div class="sample-list-img"><img src="./images/page2/seafood.jpg" alt="Логотип ресторана с рыбой" width="370">
+                    <div class="sample-list-img">
+                        <picture>
+                            <source srcset="./images/page2/seafood.jpg 1x, ./images/page2/seafood@2x.jpg 2x" media="(min-width:1200px)">
+                            <source
+                                srcset="./images/tablet_images/portfolio/t-seafood@1x.jpg 1x, ./images/tablet_images/portfolio/t-seafood@2x.jpg 2x"
+                                media="(min-width:768px)">
+                            <source
+                                srcset="./images/mobile_imeges/Portfolio/m-seafood@1x.jpg 1x, ./images/mobile_imeges/Portfolio/m-seafood@2x.jpg 2x"
+                                media="(max-width:767px)">
+                            <img src="./images/mobile_imeges/Portfolio/m-seafood@1x.jpg" alt="Логотип ресторана с рыбой" width="370">
+                        </picture>
                         <p class="card-overlay">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                             Reiciendis, ad suscipit. Voluptas esse consequuntur ex deserunt at? Sed, ad. 
                             Dignissimos eligendi cupiditate ullam excepturi suscipit dolorem delectus temporibus pariatur asperiores!
@@ -92,7 +168,19 @@
             </li>
             <li class="sample-list-item">
                 <a href="" class="sample">
-                    <div class="sample-list-img"><img src="./images/page2/earphone.jpg" alt="Наушники" width="370">
+                    <div class="sample-list-img">
+                        <picture>
+                            <source 
+                            srcset="./images/page2/earphone.jpg 1x, ./images/page2/earphone@2x.jpg 2x" 
+                            media="(min-width:1200px)">
+                            <source
+                                srcset="./images/tablet_images/portfolio/t-eirphones@1x.jpg 1x, ./images/tablet_images/portfolio/t-eirphones@2x.jpg 2x"
+                                media="(min-width:768px)">
+                            <source
+                                srcset="./images/tablet_images/portfolio/t-eirphones@1x.jpg 1x, ./images/mobile_imeges/Portfolio/m-eirphones@2x.jpg 2x"
+                                media="(max-width:767px)">
+                            <img src="./images/tablet_images/portfolio/t-eirphones@1x.jpg" alt="Наушники" width="370">
+                        </picture>
                         <p class="card-overlay">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                             Reiciendis, ad suscipit. Voluptas esse consequuntur ex deserunt at? Sed, ad. 
                             Dignissimos eligendi cupiditate ullam excepturi suscipit dolorem delectus temporibus pariatur asperiores!
@@ -106,7 +194,19 @@
             </li>
             <li class="sample-list-item">
                 <a href="" class="sample">
-                    <div class="sample-list-img"><img src="./images/page2/boxes.jpg" alt="Коробки" width="370">
+                    <div class="sample-list-img">
+                        <picture>
+                            <source 
+                            srcset="./images/page2/boxes.jpg 1x, ./images/page2/boxes@2x.jpg 2x" 
+                            media="(min-width:1200px)">
+                            <source
+                                srcset="./images/tablet_images/portfolio/t-boxes@1x.jpg 1x, ./images/tablet_images/portfolio/t-boxes@2x.jpg 2x"
+                                media="(min-width:768px)">
+                            <source
+                                srcset="./images/mobile_imeges/Portfolio/m-boxes@1x.jpg 1x, ./images/mobile_imeges/Portfolio/m-boxes@2x.jpg 2x"
+                                media="(max-width:767px)">
+                            <img src="./images/mobile_imeges/Portfolio/m-boxes@1x.jpg" alt="Коробки" width="370">
+                        </picture>
                         <p class="card-overlay">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                             Reiciendis, ad suscipit. Voluptas esse consequuntur ex deserunt at? Sed, ad. 
                             Dignissimos eligendi cupiditate ullam excepturi suscipit dolorem delectus temporibus pariatur asperiores!
@@ -120,7 +220,19 @@
             </li>
             <li class="sample-list-item">
                 <a href="" class="sample">
-                    <div class="sample-list-img"><img src="./images/page2/display.jpg" alt="Монитор" width="370">
+                    <div class="sample-list-img">
+                        <picture>
+                            <source 
+                                srcset="./images/page2/display.jpg 1x, ./images/page2/display@2x.jpg 2x" 
+                                media="(min-width:1200px)">
+                            <source
+                                srcset="./images/tablet_images/portfolio/t-screen@1x.jpg 1x, ./images/tablet_images/portfolio/t-screen@2x.jpg 2x"
+                                media="(min-width:768px)">
+                            <source
+                                srcset="./images/mobile_imeges/Portfolio/m-screen@1x.jpg 1x, ./images/mobile_imeges/Portfolio/m-screen@2x.jpg 2x"
+                                media="(max-width:767px)">
+                            <img src="./images/mobile_imeges/Portfolio/m-screen@1x.jpg" alt="Монитор" width="370">
+                        </picture>
                         <p class="card-overlay">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                             Reiciendis, ad suscipit. Voluptas esse consequuntur ex deserunt at? Sed, ad. 
                             Dignissimos eligendi cupiditate ullam excepturi suscipit dolorem delectus temporibus pariatur asperiores!
@@ -134,7 +246,19 @@
             </li>
             <li class="sample-list-item">
                 <a href="" class="sample">
-                    <div class="sample-list-img"><img src="./images/page2/book.jpg" alt="Открытая книга" width="370">
+                    <div class="sample-list-img">
+                        <picture>
+                            <source 
+                            srcset="./images/page2/book.jpg 1x, ./images/page2/book@2x.jpg 2x" 
+                            media="(min-width:1200px)">
+                            <source
+                                srcset="./images/tablet_images/portfolio/t-book@1x.jpg 1x, ./images/tablet_images/portfolio/t-book@2x.jpg 2x"
+                                media="(min-width:768px)">
+                            <source
+                                srcset="./images//mobile_imeges/Portfolio/m-book@1x.jpg 1x, ./images//mobile_imeges/Portfolio/m-book@2x.jpg 2x"
+                                media="(max-width:767px)">
+                            <img src="./images//mobile_imeges/Portfolio/m-book@1x.jpg" alt="Открытая книга" width="370">
+                        </picture>
                         <p class="card-overlay">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                             Reiciendis, ad suscipit. Voluptas esse consequuntur ex deserunt at? Sed, ad. 
                             Dignissimos eligendi cupiditate ullam excepturi suscipit dolorem delectus temporibus pariatur asperiores!
@@ -148,7 +272,19 @@
             </li>
             <li class="sample-list-item">
                 <a href="" class="sample">
-                    <div class="sample-list-img"><img src="./images/page2/lable.jpg" alt="Ярлык от одежды" width="370">
+                    <div class="sample-list-img">
+                            <picture>
+                                <source 
+                                srcset="./images/page2/lable.jpg 1x, ./images/page2/lable@2x.jpg 2x" 
+                                media="(min-width:1200px)">
+                                <source
+                                    srcset="./images/tablet_images/portfolio/t-label@1x.jpg 1x, ./images/tablet_images/portfolio/t-label@2x.jpg 2x"
+                                    media="(min-width:768px)">
+                                <source
+                                    srcset="./images//mobile_imeges/Portfolio/m-label@1x.jpg 1x, ./images//mobile_imeges/Portfolio/m-label@2x.jpg 2x"
+                                    media="(max-width:767px)">
+                                <img src="./images//mobile_imeges/Portfolio/m-label@1x.jpg" alt="Ярлык от одежды" width="370">
+                            </picture>
                     <p class="card-overlay">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                         Reiciendis, ad suscipit. Voluptas esse consequuntur ex deserunt at? Sed, ad. 
                         Dignissimos eligendi cupiditate ullam excepturi suscipit dolorem delectus temporibus pariatur asperiores!
@@ -162,7 +298,19 @@
             </li>
             <li class="sample-list-item">
                 <a href="" class="sample">
-                    <div class="sample-list-img"><img src="./images/page2/laptop.jpg" alt="Набор текста на ноутбуке" width="370">
+                    <div class="sample-list-img">
+                        <picture>
+                            <source 
+                            srcset="./images/page2/laptop.jpg 1x, ./images/page2/laptop@2x.jpg 2x" 
+                            media="(min-width:1200px)">
+                            <source
+                                srcset="./images/tablet_images/portfolio/t-laptop@1x.jpg 1x, ./images/tablet_images/portfolio/t-laptop@2x.jpg 2x"
+                                media="(min-width:768px)">
+                            <source
+                                srcset="./images//mobile_imeges/Portfolio/m-laptop@1x.jpg 1x, ./images//mobile_imeges/Portfolio/m-laptop@2x.jpg 2x"
+                                media="(max-width:767px)">
+                            <img src="./images/mobile_imeges/Portfolio/m-laptop@1x.jpg" alt="Набор текста на ноутбуке" width="370">
+                        </picture>
                         <p class="card-overlay">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                             Reiciendis, ad suscipit. Voluptas esse consequuntur ex deserunt at? Sed, ad. 
                             Dignissimos eligendi cupiditate ullam excepturi suscipit dolorem delectus temporibus pariatur asperiores!
@@ -182,7 +330,7 @@
     <footer>
         <div class="container footer-general-container">
              <!-- Logo -->
-            <div>
+            <div class="footer-contacts">
               <a href="/" class="logo-footer">Web<span class="logo-footer__logo-color-footer">Studio</span></a>
               <address class="address">
               <p class="address__margin">м. Київ, пр-т Лесі Українки, 26</p> 
@@ -211,5 +359,6 @@
             </div>
         </div>      
         </footer>
+        <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

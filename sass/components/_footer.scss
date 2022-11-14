@@ -1,11 +1,6 @@
 .footer-general-container {
     align-items: baseline;
-    // display: flex;
-}
-@media screen and (min-width:1200px){
-    .footer-general-container {
-        display: flex;
-    }
+    display: block;
 }
 .logo-footer{
     color: var(--accent-color);
@@ -131,32 +126,61 @@ address{
         margin-top: 30px;
     }
 }
+@media screen and (min-width:768px) {
+    .footer-general-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer-contacts {
+        margin-left: 76px;
+         }
+    .block-social {
+        margin-left: 160px;
+    }
+.block-sbscribe{
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.subscribe__btn{
+margin-left: auto;
+margin-right: auto;
+margin-top: 30px;
+}
+}
  @media screen and (min-width:1200px) {
+     .footer-general-container {
+         display: flex;
+     }
+
      .logo-footer {
          text-align: left;
      }
 
      .address {
-
          text-align: left;
      }
 
      .footer-title {
          text-align: left;
      }
-     .block-social{
-    margin-left: 70px;
+
+     .block-social {
+         margin-left: 70px;
      }
-     .block-sbscribe{
-    height: 86px;
-    width: 570px;
-    margin-left: 73px;
+
+     .block-sbscribe {
+         height: 86px;
+         width: 570px;
+         margin-left: 87px;
      }
-    .subscribe{
-    display: flex;
+
+     .subscribe {
+         display: flex;
      }
-    .subscribe__form{
-    padding-left: 16px;
-    width: 358px;
-    }
+
+     .subscribe__form {
+         padding-left: 16px;
+         width: 358px;
+     }
  }
