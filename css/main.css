@@ -363,7 +363,7 @@ ul {
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/mobile_imeges/mobile-bg@1x.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile_imeges/mobile-bg@1x.jpg);
   background-size: cover;
 }
 
@@ -379,27 +379,27 @@ ul {
 
 @media screen and (max-width: 767px) {
   .hero {
-    background-image: url(/images/mobile_imeges/mobile-bg@1x.jpg);
+    background-image: url(../images/mobile_imeges/mobile-bg@1x.jpg);
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .hero {
-    background-image: url(/images/mobile_imeges/mobile-bg@2x.jpg);
+    background-image: url(../images/mobile_imeges/mobile-bg@2x.jpg);
   }
 }
 @media screen and (min-width: 768) {
   .hero {
-    background-image: url(/images/tablet_images/tablet-bg@1x.jpg);
+    background-image: url(../images/tablet_images/tablet-bg@1x.jpg);
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
-    background-image: url(/images/tablet_images/tablet-bg@2x.jpg);
+    background-image: url(../images/tablet_images/tablet-bg@2x.jpg);
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
-    background-image: url(/images/hero/bg@2x.jpg);
+    background-image: url(../images/hero/bg@2x.jpg);
   }
 }
 .hidden {
@@ -416,7 +416,7 @@ ul {
     padding-bottom: 118px;
   }
   .hero {
-    background-image: url(/images/hero/bg.jpg);
+    background-image: url(../images/hero/bg.jpg);
     max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -882,7 +882,7 @@ address {
 
 .subscribe__form {
   box-sizing: border-box;
-  width: 450px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -942,6 +942,9 @@ address {
     margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .subscribe__form {
+    width: 450px;
   }
   .subscribe__btn {
     margin-left: auto;
