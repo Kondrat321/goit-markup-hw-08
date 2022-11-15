@@ -96,7 +96,9 @@ address{
     margin-top: 20px;
     }
 .subscribe__btn{
-    @extend %align;
+    display: block;
+    align-items: center;
+    justify-content: center;
     width: 200px;
     height: 50px;
     background: #2196F3;
@@ -115,42 +117,6 @@ address{
     fill: rgba(255, 255, 255, 1);
     margin-left: 10px;
 }
-@media screen and (max-width:767px) {
-    .block-social {
-        margin-top: 60px;
-        margin-bottom: 60px;
-    }
-    .subscribe__btn{
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 30px;
-    }
-}
-@media screen and (min-width:768px) {
-    .footer-general-container {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .footer-contacts {
-        margin-left: 76px;
-         }
-    .block-social {
-        margin-left: 160px;
-    }
-.block-sbscribe{
-    margin-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.subscribe__form{
-    width: 450px;
-}
-.subscribe__btn{
-margin-left: auto;
-margin-right: auto;
-margin-top: 30px;
-}
-}
  @media screen and (min-width:1200px) {
      .footer-general-container {
          display: flex;
@@ -168,14 +134,9 @@ margin-top: 30px;
          text-align: left;
      }
 
-     .block-social {
-         margin-left: 70px;
-     }
-
      .block-sbscribe {
          height: 86px;
          width: 570px;
-         margin-left: 87px;
      }
 
      .subscribe {
@@ -187,3 +148,42 @@ margin-top: 30px;
          width: 358px;
      }
  }
+@media screen and (min-width:768px) 
+and (max-width:1199px) {
+    .footer-contacts {
+        margin-left: 76px;
+    } 
+    .block-social {
+        margin-left: 160px;
+    }
+    .block-sbscribe {
+        margin-top: 60px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .subscribe__btn {
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+}
+@media screen and (max-width: 767px){
+    .block-social {
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+    
+        .subscribe__btn {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+        }
+}
+@media screen and (min-width:768px) {
+    .footer-general-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+.subscribe__form{
+    width: 450px;
+}
+}
